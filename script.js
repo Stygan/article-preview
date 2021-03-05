@@ -1,6 +1,7 @@
 let abrir = document.getElementById("cta");
+let abrir2 = document.getElementById("cta2");
 let modalC = document.getElementById("modalC");
-let arrow = document.getElementById("arrow");
+
 
 abrir.addEventListener("click", () => {
   if (modalC.style.visibility == "visible") {
@@ -13,3 +14,8 @@ abrir.addEventListener("click", () => {
     abrir.style.backgroundColor = "hsl(217, 19%, 35%)";
   }
 });
+
+abrir2.addEventListener('click', () => {
+  modalC.style.visibility = "hidden";
+  modalC.style.opacity = "0";
+})
